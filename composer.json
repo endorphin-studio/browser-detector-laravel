@@ -1,0 +1,31 @@
+{
+  "name": "endorphin-studio/browser-detector-laravel",
+  "description": "Laravel package for endorphin-studio/browser-detector",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Serhii Nekhaienko",
+      "email": "serhii.nekhaienko@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "EndorphinStudio\\Laravel\\BrowserDetector\\" : "src"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "endorphin-studio/browser-detector": "^6.0",
+    "illuminate/support": "^8",
+    "illuminate/http": "^8",
+    "ext-json": "*"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EndorphinStudio\\Laravel\\BrowserDetector\\Providers\\BrowserDetectorProvider"
+      ]
+    }
+  }
+}
